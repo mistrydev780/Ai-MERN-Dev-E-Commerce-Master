@@ -10,7 +10,7 @@ import { MdContacts } from "react-icons/md";
 import { userDataContext } from '../Context/UserContext';
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios';
-import { authDataContext } from '../Context/authContext';
+import { authDataContext } from '../Context/AuthContext';
 import { shopDataContext } from '../Context/ShopContext';
 
 

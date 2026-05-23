@@ -1,7 +1,7 @@
 import React, { useContext, useMemo, useState } from 'react'
 import { shopDataContext } from '../Context/ShopContext'
 import axios from 'axios'
-import { authDataContext } from '../Context/authContext'
+import { authDataContext } from '../Context/AuthContext'
 import { useNavigate } from 'react-router-dom'
 
 function PlaceOrder() {

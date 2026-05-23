@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
-import { authDataContext } from '../Context/authContext'
+import { authDataContext } from '../Context/AuthContext'
 
 function MyOrders() {
 

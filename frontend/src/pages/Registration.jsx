@@ -3,7 +3,7 @@ import Logo from '../assets/E-commerce MERN Assets/logo.png'
 import google from '../assets/E-commerce MERN Assets/google.png'
 import { useNavigate } from 'react-router-dom'
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { authDataContext } from '../Context/authContext';
+import { authDataContext } from '../Context/AuthContext';
 import axios from 'axios'
 import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../../utils/Firebase';
