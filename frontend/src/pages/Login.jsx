@@ -188,7 +188,7 @@ onClick={() =>
 
    window.open(
 
-      "http://localhost:5174",
+      "ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app",
 
       "_blank"
    )
