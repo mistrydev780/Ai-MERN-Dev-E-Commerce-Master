@@ -177,10 +177,14 @@ mt-6
 
 <button
 
-onClick={() =>
+onClick={() => {
 
-   window.location.href = "/admin"
-}
+window.location.href =
+
+"https://ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app"
+
+}}
+
 
 className='
 

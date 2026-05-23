@@ -10,6 +10,7 @@ import { signInWithPopup } from 'firebase/auth'
 import { auth, provider } from '../../utils/Firebase'
 
 
+
 function Login() {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("")
@@ -184,10 +185,13 @@ mt-6
 
 <button
 
-onClick={() =>
+onClick={() => {
 
-  window.location.href = "/admin"
-}
+window.location.href =
+
+"https://ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app"
+
+}}
 
 className='
 
