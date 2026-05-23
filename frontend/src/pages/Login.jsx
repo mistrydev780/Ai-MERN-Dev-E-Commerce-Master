@@ -186,12 +186,7 @@ mt-6
 
 onClick={() =>
 
-   window.open(
-
-      "https://ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app",
-
-      "_blank"
-   )
+  window.location.href = "/admin"
 }
 
 className='
