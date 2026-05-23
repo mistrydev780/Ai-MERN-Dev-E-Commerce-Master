@@ -15,21 +15,16 @@ import adminRoute from "./routes/adminRoutes.js"
 let port = process.env.PORT || 8000
 
 let app = express()
+app.set("trust proxy", 1)
 app.use(express.json())
 app.use(cookieParser())
 
 app.use(cors({
 
-    origin: [
+   origin: true,
 
-        "http://localhost:5173",
-
-        "http://localhost:5174"
-    ],
-
-    credentials: true
+   credentials: true
 }))
-
 app.use("/api/auth", authRoutes)
 app.use("/api/user", userRoutes)
 app.use("/api/product", productRoutes)

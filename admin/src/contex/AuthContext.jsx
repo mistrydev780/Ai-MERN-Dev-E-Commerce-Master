@@ -3,8 +3,7 @@ import React, { createContext } from "react";
 export const authDataContext = createContext();
 
 const authContextProvider = ({ children }) => {
-  const serverUrl = "http://localhost:8000"; // 🔥 EMPTY (proxy use karega)
-
+  const serverUrl = "https://ai-mern-dev-e-commerce-master.onrender.com"; 
   return (
     <authDataContext.Provider value={{ serverUrl }}>
       {children}
