@@ -21,14 +21,18 @@ app.use(cookieParser())
 
 app.use(cors({
 
-   origin: [
+  origin: [
 
-      "ai-mern-dev-e-commerce-master-77s2hcyn5.vercel.app",
+    "ai-mern-dev-e-commerce-master-77s2hcyn5.vercel.app",
 
-      "ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app"
-   ],
+    "ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app"
+  ],
 
-   credentials: true
+  credentials: true,
+
+  methods: ["GET", "POST", "PUT", "DELETE"],
+
+  allowedHeaders: ["Content-Type", "Authorization"]
 }))
 
 app.use("/api/auth", authRoutes)
