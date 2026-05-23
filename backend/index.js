@@ -21,10 +21,16 @@ app.use(cookieParser())
 
 app.use(cors({
 
-   origin: true,
+   origin: [
+
+      "ai-mern-dev-e-commerce-master-77s2hcyn5.vercel.app",
+
+      "ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app"
+   ],
 
    credentials: true
 }))
+
 app.use("/api/auth", authRoutes)
 app.use("/api/user", userRoutes)
 app.use("/api/product", productRoutes)
