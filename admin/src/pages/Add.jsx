@@ -22,7 +22,7 @@ function Add() {
   const [bestSeller, setBestSeller] = useState(false)
   const [sizes, setSizes] = useState([])
 
-  const serverUrl = "http://localhost:8000"
+  const serverUrl =  "https://ai-mern-dev-e-commerce-master.onrender.com"
 
   const toggleSize = (size) => {
     setSizes((prev) => {

@@ -23,10 +23,6 @@ app.use(cors({
 
   origin: [
 
-    "http://localhost:5173",
-
-    "http://localhost:5174",
-
     "https://ai-mern-dev-e-commerce-master-77s2hcyn5.vercel.app",
 
     "https://ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app"

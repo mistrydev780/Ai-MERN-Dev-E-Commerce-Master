@@ -10,10 +10,11 @@ export default defineConfig({
     port: 5174,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://ai-mern-dev-e-commerce-master.onrender.com',
         changeOrigin: true,
         secure: false,
       }
     }
   }
 })
+            
