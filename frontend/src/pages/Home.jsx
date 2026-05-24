@@ -149,10 +149,6 @@ useEffect(() => {
       <OurPolicy />
 
       <NewLetterBox />
-      <script
-        src="https://ai-customer-support-saa-s-platform.vercel.app/chatBot.js"
-        data-owner-id="usr_124031414378169090">
-      </script>
       <AiAssistant />
       <Footer />
 
