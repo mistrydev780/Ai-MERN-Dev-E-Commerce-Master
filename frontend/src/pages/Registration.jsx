@@ -178,12 +178,10 @@ mt-6
 <button
 
 onClick={() => {
-
-window.location.href =
-
-"https://ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app"
-
-}}
+    window.location.replace(
+      "https://ai-mern-dev-e-commerce-master-5u47-hz8wkaapf.vercel.app"
+    )
+  }}
 
 
 className='
