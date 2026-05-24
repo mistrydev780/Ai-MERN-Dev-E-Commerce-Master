@@ -43,19 +43,40 @@ export default function Home() {
 
   const [heroCount, setHeroCount] = useState(0)
 
-  useEffect(() => {
+useEffect(() => {
 
-    const interval = setInterval(() => {
+  const interval = setInterval(() => {
 
-      setHeroCount((prev) =>
-        prev === 3 ? 0 : prev + 1
-      )
+    setHeroCount((prev) =>
+      prev === 3 ? 0 : prev + 1
+    )
 
-    }, 3000)
+  }, 3000)
 
-    return () => clearInterval(interval)
+  const script = document.createElement("script")
 
-  }, [])
+  script.src =
+    "https://ai-customer-support-saa-s-platform.vercel.app/chatBot.js"
+
+  script.async = true
+
+  script.setAttribute(
+    "data-owner-id",
+    "usr_124031414378169090"
+  )
+
+  document.body.appendChild(script)
+
+  return () => {
+
+    clearInterval(interval)
+
+    document.body.removeChild(script)
+
+  }
+
+}, [])
+  
 
   return (
 
