@@ -23,7 +23,7 @@ app.use(cors({
 
   origin: [
 
-    "https://ai-mern-dev-e-commerce-master-b3pxms7h3.vercel.app/login",
+    "https://ai-mern-dev-e-commerce-master-70mp6f6vi.vercel.app",
 
     "https://ai-mern-dev-e-commerce-master-5u47-7lb778kkh.vercel.app/"
   ],
