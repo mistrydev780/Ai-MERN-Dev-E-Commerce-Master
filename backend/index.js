@@ -19,21 +19,26 @@ app.set("trust proxy", 1)
 app.use(express.json())
 app.use(cookieParser())
 
+// app.use(cors({
+
+//   origin: [
+
+//     "https://ai-mern-dev-e-commerce-master-70mp6f6vi.vercel.app",
+
+//     "https://ai-mern-dev-e-commerce-master-5u47-7lb778kkh.vercel.app"
+//   ],
+
+//   credentials: true,
+
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+
+//   allowedHeaders: ["Content-Type", "Authorization"]
+// }))
+
 app.use(cors({
-
-  origin: [
-
-    "https://ai-mern-dev-e-commerce-master-70mp6f6vi.vercel.app",
-
-    "https://ai-mern-dev-e-commerce-master-5u47-7lb778kkh.vercel.app/"
-  ],
-
-  credentials: true,
-
-  methods: ["GET", "POST", "PUT", "DELETE"],
-
-  allowedHeaders: ["Content-Type", "Authorization"]
-}))
+  origin: true,
+  credentials: true
+}));
 
 app.use("/api/auth", authRoutes)
 app.use("/api/user", userRoutes)

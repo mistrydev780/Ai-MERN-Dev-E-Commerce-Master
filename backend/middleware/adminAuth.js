@@ -11,8 +11,9 @@ const adminAuth = (req, res, next) => {
     }
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-
+    console.log(decoded);
     req.adminEmail = decoded.email;
+
 
     next();
   } catch (error) {

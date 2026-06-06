@@ -180,7 +180,7 @@ export const adminLogin = async (req, res) => {
       password === process.env.ADMIN_PASSWORD
     ) {
       // ✅ AWAIT LAGAO
-      const token =  gneratetoken(email);
+     const token = gneratetoken1(email);
 res.cookie("token", token, {
 
     httpOnly: true,
